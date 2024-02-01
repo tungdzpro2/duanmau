@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="text" type="text">
+    <input type="button" name="" value="them" id="them">
+    <div id="result"></div>
+    
+</body>
+<script>
+    
+    listBR = [
+        {
+            nameObj: '.',
+            br: 1,
+            indent: 2,
+        },
+        {
+            nameObj: '•',
+            br: 2,
+            indent: 10,
+        }
+    ]
+
+    const addChar = (str, char, lengchar) => {
+        let valueNeed = '';
+        for (let i = 0; i < lengchar; i++) {
+            
+            valueNeed += char;
+        }
+        return str + valueNeed;
+    }
+
+    const checkCharObj = (char, listObj) => {
+        for (let i = 0; i < listObj.length; i++) {
+             console.log(listObj[i].nameObj);
+             console.log(char);
+            if (listObj[i].nameObj === char) {
+                
+                return listObj[i];
+            }
+        }
+        return false;
+    }
+
+    const handleText = (txt, listBR) => {
+        let newStr = '', start = 0;
+        for (let i = 0; i < txt.length; i++) {
+            let resultCheck = checkCharObj(txt[i], listBR);
+           
+
+            if (resultCheck) {
+                console.log(resultCheck);
+                newStr += txt.slice(start, i +1);
+                let indent = resultCheck.indent;
+                let br = resultCheck.br;
+                newStr = addChar(newStr, "#", br);
+                start = i + 1;
+            }
+        }
+        newStr += txt.slice(start); //Thêm phần còn lại của chuỗi
+        return newStr;
+    }
+document.querySelector('#them').addEventListener('click',()=> {
+    let text = document.querySelector('#text').value;
+
+    console.log(text);
+    
+    document.querySelector('#result').innerText = handleText(text,listBR);
+});
+</script>
+</html>

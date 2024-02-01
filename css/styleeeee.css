@@ -1,0 +1,586 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    background: #10182F;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+    display: inline-block;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-box {
+    height: 40px;
+    align-items: center;
+    background-color: #fff;
+    display: inline-flex;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.search-input {
+    width: 300px;
+    height: 100%;
+    border: none;
+}
+
+i {
+    color: black;
+    font-size: 30px;
+}
+
+.lg-rigister,
+.user,
+.admin {
+    position: absolute;
+    right: 10px;
+
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+main {
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #10182F;
+}
+
+.main {
+    background: #fff;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    background-color: #fff;
+    place-content: start;
+}
+
+
+
+.main-body a {
+    text-decoration: none;
+    color: #10182F;
+}
+
+.side {
+    width: 29.3%;
+    margin-left: 10px;
+}
+
+.main-body>.sp-main>img {
+    width: 100%;
+}
+
+.main-body .sp-main {
+    margin: 10px;
+    height: 250px;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.main-body .sp-main:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.sp-main {
+    max-width: 100%;
+    width: 230px;
+    border-radius: 10px;
+}
+
+.sp-main a {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+
+.side-type,
+.side-topsp {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.side-type li , .side-topsp li{
+    border-bottom: 1px solid rgb(201, 198, 198);
+    padding: 10px;
+}
+
+
+
+.side-type ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-type ul li {
+    margin-bottom: 10px;
+}
+
+.side-topsp ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-topsp ul li {
+    margin-bottom: 10px;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.img-ctsp {
+    width: 500px;
+    height: auto;
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.tensp-ctsp {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sp-lq {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.price {
+    color: #FF5733;
+}
+
+
+.comment {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.img-and-btns {
+    padding: 30px;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.box-content-sp {
+    margin: 10px;
+}
+
+.sec-mota {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.sec-mota h6 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* Định dạng mô tả sản phẩm */
+.mota {
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: justify;
+}
+
+/* Định dạng giá sản phẩm */
+.gia {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF5733;
+    /* Màu văn bản của giá */
+    margin-top: 10px;
+}
+
+.main-of-ctsp {
+    width: 70%;
+
+}
+
+
+/* Định dạng nút */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+i {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Định dạng nút MUA HÀNG */
+.btn-mua {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    background-color: #334068;
+    /* Màu nền của nút MUA HÀNG */
+    color: #fff;
+    /* Màu văn bản của nút MUA HÀNG */
+}
+
+/* Định dạng nút TRẢ GÓP */
+
+/* Định dạng nút ADD TO CART */
+.btn-add-to-cart {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    background-color: #10182F;
+    /* Màu nền của nút ADD TO CART */
+    color: #fff;
+    /* Màu văn bản của nút ADD TO CART */
+}
+
+.sl-sp {
+    margin: 20px 0 60px 0;
+}
+
+.sl-sp .btn {
+    display: inline-flex;
+}
+
+.sl-sp .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0px solid rgb(133, 132, 129) !important;
+    border-right: 0px solid rgb(133, 132, 129) !important;
+
+    border: 1px solid rgb(225, 225, 223);
+    height: 40px;
+    width: 100px;
+}
+
+.sl-sp .btn-ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(225, 225, 223);
+    width: 40px;
+    height: 40px;
+}
+
+.list-splq {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.name-splq {
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+
+
+.comment .input-comment {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(211, 196, 196);
+    border-radius: 10px;
+}
+
+.tab-cm {
+    background-color: #ccc;
+}
+
+.obj-cm {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #b4afaf;
+}
+
+.obj-cm img {
+    width: 25px;
+}
+
+.obj-cm .user-cm {
+    font-size: 20px;
+    font-variant: inherit;
+}
+
+/* css cho form */
+.form {
+    padding: 5rem;
+    width: 500px;
+    height: 500px;
+}
+
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form input {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form a {
+    font-size: 16px;
+    color: #009579;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form input.button {
+    color: #fff;
+    background: #009579;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form input.button:hover {
+    background: #006653;
+}
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+}
+
+.signup label {
+    color: #009579;
+    cursor: pointer;
+}
+
+.signup label:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .footer-col form {
+        display: block;
+    }
+
+    .footer-col form :where(input, button) {
+        width: 100%;
+    }
+
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
+}
